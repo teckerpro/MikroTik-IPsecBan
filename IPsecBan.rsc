@@ -1,4 +1,4 @@
-:local bufferName "memory";
+:local bufferName "ipsecBuffer";
 :local listName "Blacklist";
 :local timeout 180d;
 
@@ -20,6 +20,6 @@
 				:log warning "ip $badIP has been banned (IPsec error)";
 			}
 		}
-	} on-error={ :log error "IPsecBan Script has crashed"; }
+	} on-error={ :log error "IPsecBan script has crashed"; }
 }
-:log info "IPsecBan Script was executed properly";
+:log info "IPsecBan script was executed properly";
